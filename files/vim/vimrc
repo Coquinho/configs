@@ -1,6 +1,6 @@
 set nocompatible
-set laststatus=2 
-set ttimeoutlen=0 
+set laststatus=2
+set ttimeoutlen=0
 set nofoldenable
 set clipboard=unnamedplus
 set backspace=indent,eol,start
@@ -17,7 +17,7 @@ set showmatch
 set ignorecase
 set smartcase
 
-set expandtab 
+set expandtab
 set shiftwidth=4
 set softtabstop=4
 set autoindent
@@ -38,6 +38,9 @@ Plugin 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on
+
+"Remove trailing whitespace on save
+au BufWritePre * :%s/\s\+$//e
 
 if !(&term =~ 'linux')
     set t_Co=256
