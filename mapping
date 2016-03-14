@@ -1,4 +1,6 @@
+~/.config/i3 i3
 ~/.dir_colors dir_colors
 ~/.vim vim
+~/.xinitrc xinitrc
 ~/.zshrc zshrc
 ~/.zsh zsh

@@ -1,0 +1,18 @@
+if [[ -e "${HOME}"/.xinitrc_before ]]
+then
+    . "${HOME}"/.xinitrc_before
+fi
+
+${BGCMD} "${WALLPAPER}"
+
+if which "${COMPMGR}"
+then
+    "${COMPMGR}" &
+fi
+
+if [[ -e "${HOME}"/.xinitrc_after ]]
+then
+    . "${HOME}"/.xinitrc_after
+fi
+
+"${WM}"
