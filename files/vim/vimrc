@@ -1,0 +1,45 @@
+set nocompatible
+set laststatus=2 
+set ttimeoutlen=0 
+set nofoldenable
+set clipboard=unnamedplus
+set backspace=indent,eol,start
+
+set showcmd
+set nobackup
+set number
+set ruler
+set mouse=a
+
+set hlsearch
+set incsearch
+set showmatch
+set ignorecase
+set smartcase
+
+set expandtab 
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+
+syntax on
+
+"Vundle setup
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+
+call vundle#end()
+
+filetype plugin indent on
+
+if !(&term =~ 'linux')
+    set t_Co=256
+    let g:airline_powerline_fonts=1
+endif

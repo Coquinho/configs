@@ -1,0 +1,23 @@
+text objects: i for inner, a for around
+              w for word, ) for (), ] for [], } for {}
+
+example:
+
+({[ word ]})
+     ^
+ 
+^ represents the cursor:
+iw -> 'word'
+aw -> ' word '
+i] -> ' word '
+a] -> '[ word ]'
+i} -> '[ word ]
+a} -> '{[ word ]}
+a) -> '({[ word ]})
+
+insert surrounding: ys<object><surrounding>
+    ysiw" -> ({[ "word" ]})
+change surrounding: cs<surrounding><new>
+    cs)> -> <{[ word ]}>
+delete surrounding: ds<surrounding>
+    ds} -> ([ word ])
