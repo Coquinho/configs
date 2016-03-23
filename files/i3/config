@@ -6,13 +6,9 @@ client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
 
 for_window [class="URxvt"] border none
-for_window [class="chromium"] border none
+for_window [class="firefox-bin"] border none
 
-exec_always feh --bg-center /home/stark/Dropbox/imagens/bJGx1Iw.jpg
-
-bindsym $mod+Mod1+l exec ~/app/lock.sh
-bindsym $mod+Mod1+g exec chromium
-bindsym $mod+Mod1+y exec YACReaderLibrary
+bindsym $mod+Mod1+f exec firefox-bin
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +2%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -2%
@@ -38,7 +34,7 @@ font pango:Roboto 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 11 
+#font pango:DejaVu Sans Mono 11
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -111,7 +107,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+c focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -124,6 +120,7 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+workspace_auto_back_and_forth yes
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
