@@ -8,3 +8,4 @@ require prompt
 require keyboard
 require completion
 require aliases
+require ssh-agent
