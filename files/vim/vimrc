@@ -29,6 +29,9 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+"
+"make ".pl" means prolog instead of perl
+let g:filetype_pl="prolog"
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
