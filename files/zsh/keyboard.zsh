@@ -8,9 +8,10 @@ zle -N down-line-or-beginning-search
 require-if-exists local-kbd || require-if-exists default-kbd
 
 function setup-key {
-    [[ -n "${1}" ]] && bindkey "${1}" "${2}" 
+    [[ -n "${1}" ]] && bindkey "${1}" "${2}"
 }
 
+set -o vi
 setup-key "${key[Home]}" beginning-of-line
 setup-key "${key[End]}" end-of-line
 setup-key "${key[Insert]}" overwrite-mode

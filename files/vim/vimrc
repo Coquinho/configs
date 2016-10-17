@@ -24,16 +24,18 @@ set autoindent
 
 syntax on
 
+"make ".pl" means prolog instead of perl
+let g:filetype_pl="prolog"
+
 "Vundle setup
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-"
-"make ".pl" means prolog instead of perl
-let g:filetype_pl="prolog"
+
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'Syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
