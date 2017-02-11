@@ -1,0 +1,9 @@
+URxvt*.depth: 32
+URxvt*.background: rgba:0000/0eff/0ee0/dfff
+URxvt*.foreground: #ffffff
+URxvt*.scrollBar: false
+URxvt*.scrollTtyOutput: false
+URxvt*.scrollTtyKeypress: true
+URxvt*.font: xft:Deja Vu Sans Mono for Powerline:size=10
+
+Xft.dpi: 115
