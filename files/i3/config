@@ -6,8 +6,11 @@ client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
 
 for_window [class="URxvt"] border none
-for_window [class="google-chrome"] border none
+for_window [class="Google-chrome"] border none
 for_window [class="Telegram"] border none
+for_window [class="Zathura"] border none
+
+assign [class="Telegram"] 10
 
 bindsym Mod1+f exec firefox-bin
 bindsym Mod1+g exec google-chrome-stable
@@ -24,7 +27,7 @@ bindsym Print exec xfce4-screenshooter -c -r
 bindsym XF86MonBrightnessDown exec xbacklight -5
 bindsym XF86MonBrightnessUp exec  xbacklight +5
 
-bindsym $mod + F4 exec i3lock
+bindsym $mod + F4 exec hibernate
 
 bindsym --release Print exec --no-startup-id sshot
 bindsym --release shift+Print exec --no-startup-id sshot -c
@@ -155,7 +158,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
