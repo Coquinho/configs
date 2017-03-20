@@ -2,7 +2,7 @@ HISTFILE=~/.histfile
 HISTSIZE=42000
 SAVEHIST=42000
 
-. "${HOME}"/.zsh/init.zsh
+. "${HOME}"/.config/zsh/init.zsh
 
 require prompt
 require keyboard

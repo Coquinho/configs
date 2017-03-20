@@ -3,7 +3,7 @@ then
     . "${HOME}"/.xinitrc_before
 fi
 
-${BGCMD} "${WALLPAPER}"
+$BGCMD "${WALLPAPER}"
 
 if which "${COMPMGR}"
 then
@@ -17,5 +17,4 @@ fi
 
 "${WM}"
 
-"${REDSHIFT}"
-
+$REDSHIFT

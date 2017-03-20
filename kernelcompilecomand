@@ -1,0 +1,18 @@
+#!bin/bash
+
+cd /usr/src/linux
+make -j5 && make modules_install -j5
+make install
+genkernel --install --no-mountboot --no-gpg  --udev --kernel-config=/usr/src/linux/.config  --busybox --no-compress-initramfs --all-ramdisk-modules  initramfs
+cd /boot
+cp --verbose initramfs-genkernel-x86_64-4.9.6-gentoo-r1 initramfs.cpio
+cp --verbose initramfs-genkernel-x86_64-4.9.6-gentoo-r1 initrd.img
+cd /usr/src/linux
+make -j5 && make modules_install -j5
+make install
+mount --verbose /dev/sda2 /boot/efi
+cd /boot
+#rm --verbose *.old
+cp --verbose vmlinuz-4.9.6-gentoo-r1 efi/EFI/Boot/gentoo.efi
+umount --verbose /boot/efi
+sync

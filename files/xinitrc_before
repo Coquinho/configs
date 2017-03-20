@@ -1,0 +1,6 @@
+WM="i3"
+COMPMGR="xcompmgr"
+#BGCMD="feh --fullscreen --bg-scale"
+BGCMD="hsetroot -fill"
+REDSHIFT="redshift -l -27.60099:-48.518591"
+export WALLPAPER="$HOME/Images/wallpaper/melodi_di_ujung_senja_by_donsaid.jpg"
