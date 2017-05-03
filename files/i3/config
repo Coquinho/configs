@@ -16,6 +16,7 @@ bindsym Mod1+f exec firefox-bin
 bindsym Mod1+g exec google-chrome-stable
 bindsym Mod1+x exec xfce4-screenshooter
 bindsym Mod1+t exec telegram-desktop
+bindsym Mod1+z exec zathura
 
 #Audio bindkkeys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2%
