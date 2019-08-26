@@ -9,3 +9,5 @@ require keyboard
 require completion
 require aliases
 require ssh-agent
+
+eval $(thefuck --alias)

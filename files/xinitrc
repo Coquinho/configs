@@ -3,11 +3,9 @@ then
     . "${HOME}"/.xinitrc_before
 fi
 
-$BGCMD "${WALLPAPER}"
-
 if which "${COMPMGR}"
 then
-    "${COMPMGR}" &
+    "${COMPMGR}" &disown
 fi
 
 if [[ -e "${HOME}"/.xinitrc_after ]]

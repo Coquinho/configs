@@ -1,19 +1,21 @@
 #!bin/bash
 
+KERNEL=$(uname -r)
+mkdir ban-$XICO
 cd /usr/src/linux
 make -j5 && make modules_install -j5
 make install
 emerge @module-rebuild
 genkernel --install --no-mountboot --no-gpg  --udev --kernel-config=/usr/src/linux/.config  --busybox --no-compress-initramfs --all-ramdisk-modules  initramfs
 cd /boot
-cp --verbose initramfs-genkernel-x86_64-4.9.6-gentoo-r1 initramfs.cpio
-cp --verbose initramfs-genkernel-x86_64-4.9.6-gentoo-r1 initrd.img
+cp --verbose initramfs-genkernel-x86_64-$KERNEL initramfs.cpio
+cp --verbose initramfs-genkernel-x86_64-$KERNEL initrd.img
 cd /usr/src/linux
 make -j5 && make modules_install -j5
 make install
 mount --verbose /dev/sda2 /boot/efi
 cd /boot
 #rm --verbose *.old
-cp --verbose vmlinuz-4.9.6-gentoo-r1 efi/EFI/Boot/gentoo.efi
+cp --verbose vmlinuz-$KERNEL efi/EFI/Boot/gentoo.efi
 sync
 umount --verbose /boot/efi
