@@ -1,4 +1,4 @@
 WM="i3"
 COMPMGR="xcompmgr"
 BGCMD="hsetroot -fill"
-export WALLPAPER="$HOME/Images/wallpaper/melodi_di_ujung_senja_by_donsaid.jpg"
+export WALLPAPER="$HOME/Images/wallpaper/owl.jpg"

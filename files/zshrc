@@ -10,4 +10,4 @@ require completion
 require aliases
 require ssh-agent
 
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
