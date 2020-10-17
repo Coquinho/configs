@@ -1,4 +1,5 @@
 WM="i3"
 COMPMGR="xcompmgr"
 BGCMD="hsetroot -fill"
+FCITX="fcitx"
 export WALLPAPER="$HOME/Images/wallpaper/owl.jpg"
