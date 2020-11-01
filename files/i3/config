@@ -5,8 +5,12 @@ client.unfocused        #022627 #0c4b3a #010b0b #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
 
-#Mod1 = Alt
-#Mod4 = Super
+# For reference:
+## Mod1 = Alt
+## Mod2 = NumLock
+## Mod3 = CapsLock
+## Mod4 = Super
+## Mod5 = Scroll
 set $mod Mod4
 font pango:Roboto 12
 
