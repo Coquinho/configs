@@ -1,10 +1,17 @@
 URxvt*.depth: 32
-URxvt*.background: rgba:0000/0eff/0ee0/dfe0
+URxvt*.background: rgba:0000/0eff/0ee0/afe0
 URxvt*.foreground: #ffffff
 URxvt*.scrollBar: false
 URxvt*.scrollTtyOutput: false
 URxvt*.scrollTtyKeypress: true
-URxvt*.font: xft:Deja Vu Sans Mono for Powerline:size=13
+URxvt*.font: xft:Fira Code:size=15
 
-#Xft.dpi: 160
-Xft.dpi: 105
+# Needs urxvt-resize-font-git from AUR
+URxvt.perl-ext-common: resize-font
+URxvt.resize-font.step: 1
+URxvt.keysym.Control-minus:     resize-font:smaller
+URxvt.keysym.Control-plus:      resize-font:bigger
+URxvt.keysym.Control-equal:     resize-font:reset
+URxvt.keysym.Control-question:  resize-font:show
+
+Xft.dpi: 90
