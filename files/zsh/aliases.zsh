@@ -1,3 +1,5 @@
 alias ls="ls --color"
 alias l="ls"
 alias ".."="cd .."
+alias grep="grep --color"
+alias vim="nvim"
