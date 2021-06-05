@@ -1,6 +1,11 @@
+/etc/X11/xorg.conf.d/30-touchpad.conf 30-touchpad.conf
+/etc/X11/xorg.conf.d/nvidia.conf nvidia.conf
 ~/.config/i3 i3
+~/.config/libinput-gestures.conf libinput-gestures.conf
 ~/.dir_colors dir_colors
-~/.vim vim
-~/.xinitrc xinitrc
-~/.zshrc zshrc
+~/.config/nvim nvim
+~/.xprofile xinitrc
 ~/.zsh zsh
+~/.zshrc zshrc
+~/.xinitrc_after xinitrc_after
+~/.xinitrc_before xinitrc_before

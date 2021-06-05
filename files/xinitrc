@@ -10,7 +10,12 @@ fi
 
 if [[ -e "${HOME}"/.xinitrc_after ]]
 then
-    . "${HOME}"/.xinitrc_after
+    source "${HOME}"/.xinitrc_after
+fi
+
+if which "${FCITX}"
+then
+    "${FCITX}" &disown
 fi
 
 "${WM}"

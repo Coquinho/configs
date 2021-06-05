@@ -1,11 +1,10 @@
 libinput-gestures-setup restart
 
+setxkbmap br abnt2
+
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.local/share/jupyter/lab"
-export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
-export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
-export PATH="$PATH:$HOME/.poetry/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
-export EDITOR=vim
+export PATH="$PATH:$HOME/.config/screenlayout"
+
+export EDITOR=nvim
 
 hsetroot -fill $WALLPAPER
